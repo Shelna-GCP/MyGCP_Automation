@@ -1,0 +1,6 @@
+initial_node_count = "2"
+network = "vpc-useast-03"
+project = "peaceful-branch-279707"
+location = "us-east4-a"
+subnetwork = "subnet-useast-03"
+name = "my-first-gke-cluster"
