@@ -8,7 +8,7 @@ if __name__ == '__main__':
     for i in range(1,7):
         sheetname = deployment_execution_order[i]
 
-        df = pd.read_excel(r'C:\ShelnaGCP\dynamicterrform\vmdynamic\Reference_GCP_foundation.xlsx', index_col=0,
+        df = pd.read_excel(r'Reference_GCP_foundation.xlsx', index_col=0,
                            sheet_name=sheetname)
         columns = list(df.columns)
 
