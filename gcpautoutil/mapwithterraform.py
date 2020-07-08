@@ -32,10 +32,8 @@ def mapwithvalues(sheetname, fielddict):
     :return: dictionary
     """
     fieldvaldict = dict()
-    print fielddict.keys()
     for field in fielddict.keys():
         try:
-            print str(field).strip()
             fieldvaldict[sheetdictmap[sheetname][str(field).strip()]] = fielddict[field]
         except KeyError as ke:
             continue
@@ -55,7 +53,7 @@ def mapwithterraform(vardict, sheetname):
 
         # mapping for vpc
         fieldvaldict = mapwithvalues(sheetname, vpcdict)
-        print fieldvaldict
+        print('dict : ', fieldvaldict)
 
         writetoterraform(fieldvaldict, 'vpc')
         networkname = fieldvaldict['name']
@@ -78,7 +76,7 @@ def mapwithterraform(vardict, sheetname):
         providerdict = vardict[sheetname]
         # mapping for provider
         fieldvaldict = mapwithvalues(sheetname, providerdict)
-        print fieldvaldict
+        print('dict : ', fieldvaldict)
         writetoterraform(fieldvaldict, 'provider')
         executedeployment('provider')
 
