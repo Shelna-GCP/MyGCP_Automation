@@ -94,7 +94,7 @@ gke_cluster_node_fields = {
     'location': 'location',
     'initial_node_count': 'initial_node_count',
     'project': 'project',
-    'Node Name': 'node_name',
+    'Node Name': 'name',
     'Node_project': 'project',
     'Node_initial_node_count': 'initial_node_count'
     }
