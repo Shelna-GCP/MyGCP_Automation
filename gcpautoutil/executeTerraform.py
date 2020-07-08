@@ -24,7 +24,7 @@ def executedeployment(resource):
     print( resource+'>>INIT\n')
     print(tf.init())
 
-    print resource+'>>PLAN\n'
+    print( resource+'>>PLAN\n')
     approve = {"auto-approve": True}
     tf.plan(no_color=IsFlagged, refresh=False, capture_output=True,out = 'output.tfplan',**approve)
 
