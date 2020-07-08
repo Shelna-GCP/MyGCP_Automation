@@ -17,6 +17,6 @@ if __name__ == '__main__':
             vardict = readGCPInput(df, sheetname, index)
 
             # mapping fields to terraform fields
-            print vardict
+            #print vardict
             if vardict is not None:
                 mapwithterraform(vardict,sheetname)
