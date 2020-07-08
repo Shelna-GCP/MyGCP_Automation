@@ -21,7 +21,7 @@ def executedeployment(resource):
     """
     wdir = 'terraform/' + resource
     tf = Terraform(working_dir=wdir)
-    print resource+'>>INIT\n'
+    print( resource+'>>INIT\n')
     print(tf.init())
 
     print resource+'>>PLAN\n'
